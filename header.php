@@ -8,4 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<h3><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h3> 
+<h3><a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a></h3>
+<?php wp_nav_menu(array(
+    'theme_location' => 'Header_menu'
+))?>
